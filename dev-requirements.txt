@@ -2,7 +2,7 @@ pydantic_openapi_helper>=0.2.11
 coverage==5.5
 coveralls==2.2.0
 pytest==6.2.4
-pytest-cov==2.12.1
+pytest-cov==4.1.0
 attrs~=21.2.0
 Sphinx==5.3.0
 sphinx-bootstrap-theme==0.8.1
