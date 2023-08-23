@@ -14,7 +14,7 @@ twine==3.4.2
 click>=7.0
 click-plugins==1.1.1
 importlib-metadata>=4.8
-wheel==0.38.1
+wheel==0.41.2
 setuptools==65.5.1
 pylama
 autopep8
