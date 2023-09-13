@@ -15,6 +15,6 @@ click>=7.0
 click-plugins==1.1.1
 importlib-metadata>=4.8
 wheel==0.38.1
-setuptools==65.5.1
+setuptools==68.2.2
 pylama
 autopep8
