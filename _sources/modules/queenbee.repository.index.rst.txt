@@ -1,0 +1,7 @@
+queenbee.repository.index module
+================================
+
+.. automodule:: queenbee.repository.index
+   :members:
+   :undoc-members:
+   :show-inheritance:

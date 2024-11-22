@@ -1,0 +1,22 @@
+queenbee.cli.recipe package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.cli.recipe.install
+   queenbee.cli.recipe.link
+   queenbee.cli.recipe.lint
+   queenbee.cli.recipe.new
+   queenbee.cli.recipe.package
+
+Module contents
+---------------
+
+.. automodule:: queenbee.cli.recipe
+   :members:
+   :undoc-members:
+   :show-inheritance:

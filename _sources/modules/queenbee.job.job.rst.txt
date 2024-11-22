@@ -1,0 +1,7 @@
+queenbee.job.job module
+=======================
+
+.. automodule:: queenbee.job.job
+   :members:
+   :undoc-members:
+   :show-inheritance:

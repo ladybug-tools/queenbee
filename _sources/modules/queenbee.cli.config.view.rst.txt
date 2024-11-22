@@ -1,0 +1,7 @@
+queenbee.cli.config.view module
+===============================
+
+.. automodule:: queenbee.cli.config.view
+   :members:
+   :undoc-members:
+   :show-inheritance:

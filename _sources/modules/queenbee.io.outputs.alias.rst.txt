@@ -1,0 +1,7 @@
+queenbee.io.outputs.alias module
+================================
+
+.. automodule:: queenbee.io.outputs.alias
+   :members:
+   :undoc-members:
+   :show-inheritance:

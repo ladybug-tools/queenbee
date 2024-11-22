@@ -1,0 +1,7 @@
+queenbee.cli.repository.serve module
+====================================
+
+.. automodule:: queenbee.cli.repository.serve
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,19 @@
+queenbee.repository package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.repository.index
+   queenbee.repository.package
+
+Module contents
+---------------
+
+.. automodule:: queenbee.repository
+   :members:
+   :undoc-members:
+   :show-inheritance:

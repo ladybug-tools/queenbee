@@ -1,0 +1,22 @@
+queenbee.cli.repository package
+===============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.cli.repository.index
+   queenbee.cli.repository.init
+   queenbee.cli.repository.manage
+   queenbee.cli.repository.search
+   queenbee.cli.repository.serve
+
+Module contents
+---------------
+
+.. automodule:: queenbee.cli.repository
+   :members:
+   :undoc-members:
+   :show-inheritance:

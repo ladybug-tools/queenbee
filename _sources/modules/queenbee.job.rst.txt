@@ -1,0 +1,21 @@
+queenbee.job package
+====================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.job.job
+   queenbee.job.result
+   queenbee.job.run
+   queenbee.job.status
+
+Module contents
+---------------
+
+.. automodule:: queenbee.job
+   :members:
+   :undoc-members:
+   :show-inheritance:

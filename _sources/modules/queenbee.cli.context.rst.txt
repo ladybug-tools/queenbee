@@ -1,0 +1,7 @@
+queenbee.cli.context module
+===========================
+
+.. automodule:: queenbee.cli.context
+   :members:
+   :undoc-members:
+   :show-inheritance:

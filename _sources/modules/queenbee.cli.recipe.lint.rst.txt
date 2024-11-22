@@ -1,0 +1,7 @@
+queenbee.cli.recipe.lint module
+===============================
+
+.. automodule:: queenbee.cli.recipe.lint
+   :members:
+   :undoc-members:
+   :show-inheritance:

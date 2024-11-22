@@ -1,0 +1,32 @@
+button:focus {
+    outline:0 !important;
+}
+
+#app-toolbar {
+    position: relative;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+#app-toolbar .glyphicon {
+    font-size: small;
+    margin-right: 2px;
+}
+
+#editor {
+    position: relative;
+    height: 400px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-body {
+    position: relative;
+    height: 400px;
+    z-index: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

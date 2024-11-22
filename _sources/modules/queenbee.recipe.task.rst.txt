@@ -1,0 +1,7 @@
+queenbee.recipe.task module
+===========================
+
+.. automodule:: queenbee.recipe.task
+   :members:
+   :undoc-members:
+   :show-inheritance:

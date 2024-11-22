@@ -1,0 +1,19 @@
+queenbee.plugin package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.plugin.function
+   queenbee.plugin.plugin
+
+Module contents
+---------------
+
+.. automodule:: queenbee.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:

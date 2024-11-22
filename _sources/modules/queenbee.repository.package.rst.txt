@@ -1,0 +1,7 @@
+queenbee.repository.package module
+==================================
+
+.. automodule:: queenbee.repository.package
+   :members:
+   :undoc-members:
+   :show-inheritance:

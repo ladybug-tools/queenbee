@@ -1,0 +1,7 @@
+queenbee.job.result module
+==========================
+
+.. automodule:: queenbee.job.result
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+queenbee.cli.repository.search module
+=====================================
+
+.. automodule:: queenbee.cli.repository.search
+   :members:
+   :undoc-members:
+   :show-inheritance:

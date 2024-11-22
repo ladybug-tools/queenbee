@@ -1,0 +1,7 @@
+queenbee.cli.plugin.package module
+==================================
+
+.. automodule:: queenbee.cli.plugin.package
+   :members:
+   :undoc-members:
+   :show-inheritance:

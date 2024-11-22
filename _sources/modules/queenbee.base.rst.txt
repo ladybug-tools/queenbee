@@ -1,0 +1,22 @@
+queenbee.base package
+=====================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.base.basemodel
+   queenbee.base.metadata
+   queenbee.base.parser
+   queenbee.base.request
+   queenbee.base.variable
+
+Module contents
+---------------
+
+.. automodule:: queenbee.base
+   :members:
+   :undoc-members:
+   :show-inheritance:

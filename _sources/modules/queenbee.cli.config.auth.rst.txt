@@ -1,0 +1,7 @@
+queenbee.cli.config.auth module
+===============================
+
+.. automodule:: queenbee.cli.config.auth
+   :members:
+   :undoc-members:
+   :show-inheritance:

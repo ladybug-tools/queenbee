@@ -1,0 +1,19 @@
+queenbee.cli.config package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.cli.config.auth
+   queenbee.cli.config.view
+
+Module contents
+---------------
+
+.. automodule:: queenbee.cli.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

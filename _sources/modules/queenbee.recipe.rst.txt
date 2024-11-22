@@ -1,0 +1,21 @@
+queenbee.recipe package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.recipe.dag
+   queenbee.recipe.dependency
+   queenbee.recipe.recipe
+   queenbee.recipe.task
+
+Module contents
+---------------
+
+.. automodule:: queenbee.recipe
+   :members:
+   :undoc-members:
+   :show-inheritance:

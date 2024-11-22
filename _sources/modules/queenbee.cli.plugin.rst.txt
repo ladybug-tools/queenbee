@@ -1,0 +1,20 @@
+queenbee.cli.plugin package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.cli.plugin.lint
+   queenbee.cli.plugin.new
+   queenbee.cli.plugin.package
+
+Module contents
+---------------
+
+.. automodule:: queenbee.cli.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:

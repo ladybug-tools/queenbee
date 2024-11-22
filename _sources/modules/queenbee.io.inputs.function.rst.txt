@@ -1,0 +1,7 @@
+queenbee.io.inputs.function module
+==================================
+
+.. automodule:: queenbee.io.inputs.function
+   :members:
+   :undoc-members:
+   :show-inheritance:

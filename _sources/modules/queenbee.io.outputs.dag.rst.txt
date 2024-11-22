@@ -1,0 +1,7 @@
+queenbee.io.outputs.dag module
+==============================
+
+.. automodule:: queenbee.io.outputs.dag
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+queenbee.base.parser module
+===========================
+
+.. automodule:: queenbee.base.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:

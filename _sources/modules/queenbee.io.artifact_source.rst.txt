@@ -1,0 +1,7 @@
+queenbee.io.artifact\_source module
+===================================
+
+.. automodule:: queenbee.io.artifact_source
+   :members:
+   :undoc-members:
+   :show-inheritance:

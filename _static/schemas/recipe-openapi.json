@@ -1,0 +1,5166 @@
+{
+  "openapi": "3.0.2",
+  "servers": [],
+  "info": {
+    "title": "Queenbee Recipe Schema",
+    "version": "1.28.2",
+    "description": "Schema documentation for Queenbee Recipes"
+  },
+  "externalDocs": {},
+  "tags": [
+    {
+      "name": "dag_model",
+      "x-displayName": "DAG",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAG\" />\n"
+    },
+    {
+      "name": "dagarrayinput_model",
+      "x-displayName": "DAGArrayInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGArrayInput\" />\n"
+    },
+    {
+      "name": "dagarrayinputalias_model",
+      "x-displayName": "DAGArrayInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGArrayInputAlias\" />\n"
+    },
+    {
+      "name": "dagarrayoutput_model",
+      "x-displayName": "DAGArrayOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGArrayOutput\" />\n"
+    },
+    {
+      "name": "dagarrayoutputalias_model",
+      "x-displayName": "DAGArrayOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGArrayOutputAlias\" />\n"
+    },
+    {
+      "name": "dagbooleaninput_model",
+      "x-displayName": "DAGBooleanInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGBooleanInput\" />\n"
+    },
+    {
+      "name": "dagbooleaninputalias_model",
+      "x-displayName": "DAGBooleanInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGBooleanInputAlias\" />\n"
+    },
+    {
+      "name": "dagbooleanoutput_model",
+      "x-displayName": "DAGBooleanOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGBooleanOutput\" />\n"
+    },
+    {
+      "name": "dagbooleanoutputalias_model",
+      "x-displayName": "DAGBooleanOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGBooleanOutputAlias\" />\n"
+    },
+    {
+      "name": "dagfileinput_model",
+      "x-displayName": "DAGFileInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFileInput\" />\n"
+    },
+    {
+      "name": "dagfileinputalias_model",
+      "x-displayName": "DAGFileInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFileInputAlias\" />\n"
+    },
+    {
+      "name": "dagfileoutput_model",
+      "x-displayName": "DAGFileOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFileOutput\" />\n"
+    },
+    {
+      "name": "dagfileoutputalias_model",
+      "x-displayName": "DAGFileOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFileOutputAlias\" />\n"
+    },
+    {
+      "name": "dagfolderinput_model",
+      "x-displayName": "DAGFolderInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFolderInput\" />\n"
+    },
+    {
+      "name": "dagfolderinputalias_model",
+      "x-displayName": "DAGFolderInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFolderInputAlias\" />\n"
+    },
+    {
+      "name": "dagfolderoutput_model",
+      "x-displayName": "DAGFolderOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFolderOutput\" />\n"
+    },
+    {
+      "name": "dagfolderoutputalias_model",
+      "x-displayName": "DAGFolderOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGFolderOutputAlias\" />\n"
+    },
+    {
+      "name": "daggenericinput_model",
+      "x-displayName": "DAGGenericInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGGenericInput\" />\n"
+    },
+    {
+      "name": "daggenericinputalias_model",
+      "x-displayName": "DAGGenericInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGGenericInputAlias\" />\n"
+    },
+    {
+      "name": "daggenericoutput_model",
+      "x-displayName": "DAGGenericOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGGenericOutput\" />\n"
+    },
+    {
+      "name": "daggenericoutputalias_model",
+      "x-displayName": "DAGGenericOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGGenericOutputAlias\" />\n"
+    },
+    {
+      "name": "dagintegerinput_model",
+      "x-displayName": "DAGIntegerInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGIntegerInput\" />\n"
+    },
+    {
+      "name": "dagintegerinputalias_model",
+      "x-displayName": "DAGIntegerInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGIntegerInputAlias\" />\n"
+    },
+    {
+      "name": "dagintegeroutput_model",
+      "x-displayName": "DAGIntegerOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGIntegerOutput\" />\n"
+    },
+    {
+      "name": "dagintegeroutputalias_model",
+      "x-displayName": "DAGIntegerOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGIntegerOutputAlias\" />\n"
+    },
+    {
+      "name": "dagjsonobjectinput_model",
+      "x-displayName": "DAGJSONObjectInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGJSONObjectInput\" />\n"
+    },
+    {
+      "name": "dagjsonobjectinputalias_model",
+      "x-displayName": "DAGJSONObjectInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGJSONObjectInputAlias\" />\n"
+    },
+    {
+      "name": "dagjsonobjectoutput_model",
+      "x-displayName": "DAGJSONObjectOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGJSONObjectOutput\" />\n"
+    },
+    {
+      "name": "dagjsonobjectoutputalias_model",
+      "x-displayName": "DAGJSONObjectOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGJSONObjectOutputAlias\" />\n"
+    },
+    {
+      "name": "daglinkedinputalias_model",
+      "x-displayName": "DAGLinkedInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGLinkedInputAlias\" />\n"
+    },
+    {
+      "name": "daglinkedoutputalias_model",
+      "x-displayName": "DAGLinkedOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGLinkedOutputAlias\" />\n"
+    },
+    {
+      "name": "dagnumberinput_model",
+      "x-displayName": "DAGNumberInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGNumberInput\" />\n"
+    },
+    {
+      "name": "dagnumberinputalias_model",
+      "x-displayName": "DAGNumberInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGNumberInputAlias\" />\n"
+    },
+    {
+      "name": "dagnumberoutput_model",
+      "x-displayName": "DAGNumberOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGNumberOutput\" />\n"
+    },
+    {
+      "name": "dagnumberoutputalias_model",
+      "x-displayName": "DAGNumberOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGNumberOutputAlias\" />\n"
+    },
+    {
+      "name": "dagpathinput_model",
+      "x-displayName": "DAGPathInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGPathInput\" />\n"
+    },
+    {
+      "name": "dagpathinputalias_model",
+      "x-displayName": "DAGPathInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGPathInputAlias\" />\n"
+    },
+    {
+      "name": "dagpathoutput_model",
+      "x-displayName": "DAGPathOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGPathOutput\" />\n"
+    },
+    {
+      "name": "dagpathoutputalias_model",
+      "x-displayName": "DAGPathOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGPathOutputAlias\" />\n"
+    },
+    {
+      "name": "dagstringinput_model",
+      "x-displayName": "DAGStringInput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGStringInput\" />\n"
+    },
+    {
+      "name": "dagstringinputalias_model",
+      "x-displayName": "DAGStringInputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGStringInputAlias\" />\n"
+    },
+    {
+      "name": "dagstringoutput_model",
+      "x-displayName": "DAGStringOutput",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGStringOutput\" />\n"
+    },
+    {
+      "name": "dagstringoutputalias_model",
+      "x-displayName": "DAGStringOutputAlias",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGStringOutputAlias\" />\n"
+    },
+    {
+      "name": "dagtask_model",
+      "x-displayName": "DAGTask",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGTask\" />\n"
+    },
+    {
+      "name": "dagtaskloop_model",
+      "x-displayName": "DAGTaskLoop",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DAGTaskLoop\" />\n"
+    },
+    {
+      "name": "dependency_model",
+      "x-displayName": "Dependency",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/Dependency\" />\n"
+    },
+    {
+      "name": "dependencykind_model",
+      "x-displayName": "DependencyKind",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/DependencyKind\" />\n"
+    },
+    {
+      "name": "filereference_model",
+      "x-displayName": "FileReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/FileReference\" />\n"
+    },
+    {
+      "name": "folderreference_model",
+      "x-displayName": "FolderReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/FolderReference\" />\n"
+    },
+    {
+      "name": "http_model",
+      "x-displayName": "HTTP",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/HTTP\" />\n"
+    },
+    {
+      "name": "ioaliashandler_model",
+      "x-displayName": "IOAliasHandler",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/IOAliasHandler\" />\n"
+    },
+    {
+      "name": "inputfilereference_model",
+      "x-displayName": "InputFileReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/InputFileReference\" />\n"
+    },
+    {
+      "name": "inputfolderreference_model",
+      "x-displayName": "InputFolderReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/InputFolderReference\" />\n"
+    },
+    {
+      "name": "inputpathreference_model",
+      "x-displayName": "InputPathReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/InputPathReference\" />\n"
+    },
+    {
+      "name": "inputreference_model",
+      "x-displayName": "InputReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/InputReference\" />\n"
+    },
+    {
+      "name": "itemreference_model",
+      "x-displayName": "ItemReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ItemReference\" />\n"
+    },
+    {
+      "name": "itemtype_model",
+      "x-displayName": "ItemType",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ItemType\" />\n"
+    },
+    {
+      "name": "license_model",
+      "x-displayName": "License",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/License\" />\n"
+    },
+    {
+      "name": "maintainer_model",
+      "x-displayName": "Maintainer",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/Maintainer\" />\n"
+    },
+    {
+      "name": "metadata_model",
+      "x-displayName": "MetaData",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/MetaData\" />\n"
+    },
+    {
+      "name": "projectfolder_model",
+      "x-displayName": "ProjectFolder",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ProjectFolder\" />\n"
+    },
+    {
+      "name": "recipe_model",
+      "x-displayName": "Recipe",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/Recipe\" />\n"
+    },
+    {
+      "name": "s3_model",
+      "x-displayName": "S3",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/S3\" />\n"
+    },
+    {
+      "name": "taskargument_model",
+      "x-displayName": "TaskArgument",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskArgument\" />\n"
+    },
+    {
+      "name": "taskfilereference_model",
+      "x-displayName": "TaskFileReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskFileReference\" />\n"
+    },
+    {
+      "name": "taskfolderreference_model",
+      "x-displayName": "TaskFolderReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskFolderReference\" />\n"
+    },
+    {
+      "name": "taskpathargument_model",
+      "x-displayName": "TaskPathArgument",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskPathArgument\" />\n"
+    },
+    {
+      "name": "taskpathreference_model",
+      "x-displayName": "TaskPathReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskPathReference\" />\n"
+    },
+    {
+      "name": "taskpathreturn_model",
+      "x-displayName": "TaskPathReturn",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskPathReturn\" />\n"
+    },
+    {
+      "name": "taskreference_model",
+      "x-displayName": "TaskReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskReference\" />\n"
+    },
+    {
+      "name": "taskreturn_model",
+      "x-displayName": "TaskReturn",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/TaskReturn\" />\n"
+    },
+    {
+      "name": "valuefilereference_model",
+      "x-displayName": "ValueFileReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ValueFileReference\" />\n"
+    },
+    {
+      "name": "valuefolderreference_model",
+      "x-displayName": "ValueFolderReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ValueFolderReference\" />\n"
+    },
+    {
+      "name": "valuelistreference_model",
+      "x-displayName": "ValueListReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ValueListReference\" />\n"
+    },
+    {
+      "name": "valuereference_model",
+      "x-displayName": "ValueReference",
+      "description": "<SchemaDefinition schemaRef=\"#/components/schemas/ValueReference\" />\n"
+    }
+  ],
+  "x-tagGroups": [
+    {
+      "name": "Models",
+      "tags": [
+        "dag_model",
+        "dagarrayinput_model",
+        "dagarrayinputalias_model",
+        "dagarrayoutput_model",
+        "dagarrayoutputalias_model",
+        "dagbooleaninput_model",
+        "dagbooleaninputalias_model",
+        "dagbooleanoutput_model",
+        "dagbooleanoutputalias_model",
+        "dagfileinput_model",
+        "dagfileinputalias_model",
+        "dagfileoutput_model",
+        "dagfileoutputalias_model",
+        "dagfolderinput_model",
+        "dagfolderinputalias_model",
+        "dagfolderoutput_model",
+        "dagfolderoutputalias_model",
+        "daggenericinput_model",
+        "daggenericinputalias_model",
+        "daggenericoutput_model",
+        "daggenericoutputalias_model",
+        "dagintegerinput_model",
+        "dagintegerinputalias_model",
+        "dagintegeroutput_model",
+        "dagintegeroutputalias_model",
+        "dagjsonobjectinput_model",
+        "dagjsonobjectinputalias_model",
+        "dagjsonobjectoutput_model",
+        "dagjsonobjectoutputalias_model",
+        "daglinkedinputalias_model",
+        "daglinkedoutputalias_model",
+        "dagnumberinput_model",
+        "dagnumberinputalias_model",
+        "dagnumberoutput_model",
+        "dagnumberoutputalias_model",
+        "dagpathinput_model",
+        "dagpathinputalias_model",
+        "dagpathoutput_model",
+        "dagpathoutputalias_model",
+        "dagstringinput_model",
+        "dagstringinputalias_model",
+        "dagstringoutput_model",
+        "dagstringoutputalias_model",
+        "dagtask_model",
+        "dagtaskloop_model",
+        "dependency_model",
+        "dependencykind_model",
+        "filereference_model",
+        "folderreference_model",
+        "http_model",
+        "inputfilereference_model",
+        "inputfolderreference_model",
+        "inputpathreference_model",
+        "inputreference_model",
+        "ioaliashandler_model",
+        "itemreference_model",
+        "itemtype_model",
+        "license_model",
+        "maintainer_model",
+        "metadata_model",
+        "projectfolder_model",
+        "recipe_model",
+        "s3_model",
+        "taskargument_model",
+        "taskfilereference_model",
+        "taskfolderreference_model",
+        "taskpathargument_model",
+        "taskpathreference_model",
+        "taskpathreturn_model",
+        "taskreference_model",
+        "taskreturn_model",
+        "valuefilereference_model",
+        "valuefolderreference_model",
+        "valuelistreference_model",
+        "valuereference_model"
+      ]
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Maintainer": {
+        "title": "Maintainer",
+        "description": "Maintainer information",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the author/maintainer person or organization.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "Maintainer",
+            "pattern": "^Maintainer$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "email": {
+            "title": "Email",
+            "description": "The email address of the author/maintainer person or organization.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "License": {
+        "title": "License",
+        "description": "License information for the Package",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The license name used for the package.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "License",
+            "pattern": "^License$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "url": {
+            "title": "Url",
+            "description": "A URL to the license used for the package.",
+            "minLength": 1,
+            "maxLength": 65536,
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "MetaData": {
+        "title": "MetaData",
+        "description": "Package metadata information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Package name. Make it descriptive and helpful ;)",
+            "type": "string"
+          },
+          "tag": {
+            "title": "Tag",
+            "description": "The tag of the package",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "MetaData",
+            "pattern": "^MetaData$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "app_version": {
+            "title": "App Version",
+            "description": "The version of the application code underlying the manifest",
+            "type": "string"
+          },
+          "keywords": {
+            "title": "Keywords",
+            "description": "A list of keywords to search the package by",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maintainers": {
+            "title": "Maintainers",
+            "description": "A list of maintainers for the package",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Maintainer"
+            }
+          },
+          "home": {
+            "title": "Home",
+            "description": "The URL of this package's home page",
+            "type": "string"
+          },
+          "sources": {
+            "title": "Sources",
+            "description": "A list of URLs to source code for this project",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "icon": {
+            "title": "Icon",
+            "description": "A URL to an SVG or PNG image to be used as an icon",
+            "type": "string"
+          },
+          "deprecated": {
+            "title": "Deprecated",
+            "description": "Whether this package is deprecated",
+            "type": "boolean"
+          },
+          "description": {
+            "title": "Description",
+            "description": "A description of what this package does",
+            "type": "string"
+          },
+          "license": {
+            "title": "License",
+            "description": "The license information.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/License"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "tag"
+        ]
+      },
+      "DependencyKind": {
+        "title": "DependencyKind",
+        "description": "Dependency kind.",
+        "enum": [
+          "recipe",
+          "plugin"
+        ],
+        "type": "string"
+      },
+      "Dependency": {
+        "title": "Dependency",
+        "description": "Configuration to fetch a Recipe or Plugin that another Recipe depends on.",
+        "type": "object",
+        "properties": {
+          "kind": {
+            "description": "The kind of dependency. It can be a recipe or an plugin.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DependencyKind"
+              }
+            ]
+          },
+          "name": {
+            "title": "Name",
+            "description": "Workflow name. This name should be unique among all the resources in your resource. Use an alias if this is not the case.",
+            "type": "string"
+          },
+          "tag": {
+            "title": "Tag",
+            "description": "Tag of the resource.",
+            "type": "string"
+          },
+          "source": {
+            "title": "Source",
+            "description": "URL to a repository where this resource can be found.",
+            "examples": [
+              "https://registry.pollination.solutions/ladybugbot",
+              "https://some-random-user.github.io/registry"
+            ],
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "Dependency",
+            "pattern": "^Dependency$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "hash": {
+            "title": "Hash",
+            "description": "The digest hash of the dependency when retrieved from its source. This is locked when the resource dependencies are downloaded.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "An optional alias to refer to this dependency. Useful if the name is already used somewhere else.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "name",
+          "tag",
+          "source"
+        ]
+      },
+      "IOAliasHandler": {
+        "title": "IOAliasHandler",
+        "description": "Input and output alias handler object.",
+        "type": "object",
+        "properties": {
+          "language": {
+            "title": "Language",
+            "description": "Declare the language (e.g. python, csharp, etc.). This option allows the recipe to be flexible on handling different programming languages.",
+            "type": "string"
+          },
+          "module": {
+            "title": "Module",
+            "description": "Target module or namespace to load the alias function.",
+            "example": "honeybee_rhino.handlers",
+            "type": "string"
+          },
+          "function": {
+            "title": "Function",
+            "description": "Name of the function. The input value will be passed to this function as the first argument.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "IOAliasHandler",
+            "pattern": "^IOAliasHandler$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "index": {
+            "title": "Index",
+            "description": "An integer to set the index for the order of execution. This input is only useful when there are more than one handler for the same platform and the output of one handler should be passed to another handler. This is also called chained handlers. By default all the handlers are indexed as 0 assuming they are not chained.",
+            "default": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "language",
+          "module",
+          "function"
+        ]
+      },
+      "DAGGenericInputAlias": {
+        "title": "DAGGenericInputAlias",
+        "description": "Base class for DAG Alias inputs.\n\nThis class adds a handler to input to handle the process of loading the input\nfrom different graphical interfaces.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGGenericInputAlias",
+            "pattern": "^DAGGenericInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value for generic input.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGStringInputAlias": {
+        "title": "DAGStringInputAlias",
+        "description": "An Alias String input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGStringInputAlias",
+            "pattern": "^DAGStringInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGIntegerInputAlias": {
+        "title": "DAGIntegerInputAlias",
+        "description": "An alias integer input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/numeric.html#numeric\nfor more information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGIntegerInputAlias",
+            "pattern": "^DAGIntegerInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "integer",
+            "format": "int32"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGNumberInputAlias": {
+        "title": "DAGNumberInputAlias",
+        "description": "An alias number input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/numeric.html#numeric\nfor more information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGNumberInputAlias",
+            "pattern": "^DAGNumberInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "number",
+            "format": "double"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGBooleanInputAlias": {
+        "title": "DAGBooleanInputAlias",
+        "description": "The boolean type matches only two special values: True and False.\n\nNote that values that evaluate to true or false, such as 1 and 0, are not accepted.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/boolean.html for more\ninformation.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGBooleanInputAlias",
+            "pattern": "^DAGBooleanInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "boolean"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "HTTP": {
+        "title": "HTTP",
+        "description": "HTTP Source\n\nA web HTTP to an FTP server or an API for example.",
+        "type": "object",
+        "properties": {
+          "url": {
+            "title": "Url",
+            "description": "For a HTTP endpoint this can be http://climate.onebuilding.org.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "HTTP",
+            "pattern": "^HTTP$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      },
+      "S3": {
+        "title": "S3",
+        "description": "S3 Source\n\nAn S3 bucket artifact Source.",
+        "type": "object",
+        "properties": {
+          "key": {
+            "title": "Key",
+            "description": "The path inside the bucket to source artifacts from.",
+            "type": "string"
+          },
+          "endpoint": {
+            "title": "Endpoint",
+            "description": "The HTTP endpoint to reach the S3 bucket.",
+            "type": "string"
+          },
+          "bucket": {
+            "title": "Bucket",
+            "description": "The name of the S3 bucket on the host server.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "S3",
+            "pattern": "^S3$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "credentials_path": {
+            "title": "Credentials Path",
+            "description": "Path to the file holding the AccessKey and SecretAccessKey to authenticate to the bucket. Assumes public bucket access if none are specified.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "endpoint",
+          "bucket"
+        ]
+      },
+      "ProjectFolder": {
+        "title": "ProjectFolder",
+        "description": "Project Folder Source\n\nThis is the path to a folder where files and folders can be sourced. In the context\nof a desktop run Workflow this folder will correspond to a local folder. In the\ncontext of a workflow run on Pollination this folder will correspond to a Project\nscoped folder.",
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "default": "ProjectFolder",
+            "pattern": "^ProjectFolder$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "path": {
+            "title": "Path",
+            "description": "The path to a folder where files and folders can be sourced. For a local filesystem this can be \"C:\\Users\\me\\jobs\\test\".",
+            "type": "string"
+          }
+        }
+      },
+      "DAGFolderInputAlias": {
+        "title": "DAGFolderInputAlias",
+        "description": "An alias folder input.\n\nFolder is a special string input. Unlike other string inputs, a folder will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFolderInputAlias",
+            "pattern": "^DAGFolderInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGFileInputAlias": {
+        "title": "DAGFileInputAlias",
+        "description": "An alias file input.\n\nFile is a special string input. Unlike other string inputs, a file will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    # a file with maximum 50 characters with an ``epw`` extension.\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFileInputAlias",
+            "pattern": "^DAGFileInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "extensions": {
+            "title": "Extensions",
+            "description": "Optional list of extensions for file. The check for extension is case-insensitive.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGPathInputAlias": {
+        "title": "DAGPathInputAlias",
+        "description": "A file or a folder input.\n\nUse this input only in cases that the input can be either a file or folder. For file\nor folder-only inputs see File and Folder.\n\nPath is a special string input. Unlike other string inputs, a path will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    # a file with maximum 50 characters with an ``epw`` extension.\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGPathInputAlias",
+            "pattern": "^DAGPathInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "extensions": {
+            "title": "Extensions",
+            "description": "Optional list of extensions for path. The check for extension is case-insensitive. The extension will only be validated for file inputs.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "ItemType": {
+        "title": "ItemType",
+        "description": "Type enum for items in a list.\n\nItems can not be files or folder. For a list of files you should copy them to a\nfolder and use FolderInput input instead of using ArrayInput.",
+        "enum": [
+          "Generic",
+          "String",
+          "Integer",
+          "Number",
+          "Boolean",
+          "Array",
+          "JSONObject"
+        ],
+        "type": "string"
+      },
+      "DAGArrayInputAlias": {
+        "title": "DAGArrayInputAlias",
+        "description": "A JSON array input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/array.html for\nmore information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGArrayInputAlias",
+            "pattern": "^DAGArrayInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "array",
+            "items": {}
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "items_type": {
+            "description": "Type of items in an array. All the items in an array must be from the same type.",
+            "default": "String",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ItemType"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGJSONObjectInputAlias": {
+        "title": "DAGJSONObjectInputAlias",
+        "description": "An alias JSON object input.\n\nJSON objects are similar to Python dictionaries.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/object.html for\nmore information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGJSONObjectInputAlias",
+            "pattern": "^DAGJSONObjectInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "object"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGLinkedInputAlias": {
+        "title": "DAGLinkedInputAlias",
+        "description": "An Alias for Linked Inputs.\n\nA linked input alias will be hidden in the UI and will be linked to an object in \nthe UI using the input handler.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGLinkedInputAlias",
+            "pattern": "^DAGLinkedInputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value for generic input.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGGenericInput": {
+        "title": "DAGGenericInput",
+        "description": "Base class for DAG inputs.\n\nThis class adds a handler to input to handle the process of loading the input\nfrom different graphical interfaces.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGGenericInput",
+            "pattern": "^DAGGenericInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value for generic input.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGStringInput": {
+        "title": "DAGStringInput",
+        "description": "A String input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGStringInput",
+            "pattern": "^DAGStringInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGIntegerInput": {
+        "title": "DAGIntegerInput",
+        "description": "An integer input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/numeric.html#numeric\nfor more information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGIntegerInput",
+            "pattern": "^DAGIntegerInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "integer",
+            "format": "int32"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGNumberInput": {
+        "title": "DAGNumberInput",
+        "description": "A number input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/numeric.html#numeric\nfor more information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGNumberInput",
+            "pattern": "^DAGNumberInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "number",
+            "format": "double"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGBooleanInput": {
+        "title": "DAGBooleanInput",
+        "description": "The boolean type matches only two special values: True and False.\n\nNote that values that evaluate to true or false, such as 1 and 0, are not accepted.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/boolean.html for more\ninformation.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGBooleanInput",
+            "pattern": "^DAGBooleanInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "boolean"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGFolderInput": {
+        "title": "DAGFolderInput",
+        "description": "A folder input.\n\nFolder is a special string input. Unlike other string inputs, a folder will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFolderInput",
+            "pattern": "^DAGFolderInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGFileInput": {
+        "title": "DAGFileInput",
+        "description": "A file input.\n\nFile is a special string input. Unlike other string inputs, a file will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    # a file with maximum 50 characters with an ``epw`` extension.\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFileInput",
+            "pattern": "^DAGFileInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "extensions": {
+            "title": "Extensions",
+            "description": "Optional list of extensions for file. The check for extension is case-insensitive.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGPathInput": {
+        "title": "DAGPathInput",
+        "description": "A file or a folder input.\n\nUse this input only in cases that the input can be either a file or folder. For file\nor folder-only inputs see File and Folder.\n\nPath is a special string input. Unlike other string inputs, a path will be copied\nfrom its location to execution folder when a workflow is executed.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/string.html#string for\nmore information.\n\n.. code-block:: python\n\n    # a file with maximum 50 characters with an ``epw`` extension.\n\n    \"schema\": {\n        \"type\": \"string\",\n        \"maxLength\": 50,\n        \"pattern\": \"(?i)(^.*\\.epw$)\"\n    }",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGPathInput",
+            "pattern": "^DAGPathInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "The default source for file if the value is not provided.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HTTP"
+              },
+              {
+                "$ref": "#/components/schemas/S3"
+              },
+              {
+                "$ref": "#/components/schemas/ProjectFolder"
+              }
+            ]
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "extensions": {
+            "title": "Extensions",
+            "description": "Optional list of extensions for path. The check for extension is case-insensitive. The extension will only be validated for file inputs.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGArrayInput": {
+        "title": "DAGArrayInput",
+        "description": "A JSON array input.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/array.html for\nmore information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGArrayInput",
+            "pattern": "^DAGArrayInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "array",
+            "items": {}
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          },
+          "items_type": {
+            "description": "Type of items in an array. All the items in an array must be from the same type.",
+            "default": "String",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ItemType"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGJSONObjectInput": {
+        "title": "DAGJSONObjectInput",
+        "description": "A JSON object input.\n\nJSON objects are similar to Python dictionaries.\n\nYou can add additional validation by defining a JSONSchema specification.\n\nSee http://json-schema.org/understanding-json-schema/reference/object.html for\nmore information.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Input name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGJSONObjectInput",
+            "pattern": "^DAGJSONObjectInput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for input.",
+            "type": "string"
+          },
+          "default": {
+            "title": "Default",
+            "description": "Default value to use for an input if a value was not supplied.",
+            "type": "object"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of aliases for this input in different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedInputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A field to indicate if this input is required. This input needs to be set explicitly even when a default value is provided.",
+            "default": false,
+            "type": "boolean"
+          },
+          "spec": {
+            "title": "Spec",
+            "description": "An optional JSON Schema specification to validate the input value. You can use validate_spec method to validate a value against the spec.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "DAGGenericOutputAlias": {
+        "title": "DAGGenericOutputAlias",
+        "description": "DAG generic alias output.\n\nIn most cases, you should not be using the generic output unless you need a dynamic\noutput that changes its type in different platforms because of returning different\nobjects in handler.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGGenericOutputAlias",
+            "pattern": "^DAGGenericOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "TaskReference": {
+        "title": "TaskReference",
+        "description": "A Task reference for parameters other than files or folders.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the task to pull output data from.",
+            "type": "string"
+          },
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the variable.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskReference",
+            "pattern": "^TaskReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "variable"
+        ]
+      },
+      "FileReference": {
+        "title": "FileReference",
+        "description": "Reference to a file.",
+        "type": "object",
+        "properties": {
+          "path": {
+            "title": "Path",
+            "description": "Relative path to a file.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "FileReference",
+            "pattern": "^FileReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "DAGStringOutputAlias": {
+        "title": "DAGStringOutputAlias",
+        "description": "DAG alias string output.\n\nThis output loads the content from a file as a string.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGStringOutputAlias",
+            "pattern": "^DAGStringOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGIntegerOutputAlias": {
+        "title": "DAGIntegerOutputAlias",
+        "description": "DAG alias integer output.\n\nThis output loads the content from a file as an integer.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGIntegerOutputAlias",
+            "pattern": "^DAGIntegerOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGNumberOutputAlias": {
+        "title": "DAGNumberOutputAlias",
+        "description": "DAG alias number output.\n\nThis output loads the content from a file as a floating number.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGNumberOutputAlias",
+            "pattern": "^DAGNumberOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGBooleanOutputAlias": {
+        "title": "DAGBooleanOutputAlias",
+        "description": "DAG alias boolean output.\n\nThis output loads the content from a file as a boolean.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGBooleanOutputAlias",
+            "pattern": "^DAGBooleanOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "FolderReference": {
+        "title": "FolderReference",
+        "description": "Reference to a folder.",
+        "type": "object",
+        "properties": {
+          "path": {
+            "title": "Path",
+            "description": "Relative path to a folder.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "FolderReference",
+            "pattern": "^FolderReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "DAGFolderOutputAlias": {
+        "title": "DAGFolderOutputAlias",
+        "description": "DAG alias folder output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a folder or a task output. Task output must be folder.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FolderReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFolderOutputAlias",
+            "pattern": "^DAGFolderOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGFileOutputAlias": {
+        "title": "DAGFileOutputAlias",
+        "description": "DAG alias file output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFileOutputAlias",
+            "pattern": "^DAGFileOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGPathOutputAlias": {
+        "title": "DAGPathOutputAlias",
+        "description": "DAG alias path output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file, folder or a task output. Task output must either be a file or a folder.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              },
+              {
+                "$ref": "#/components/schemas/FolderReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGPathOutputAlias",
+            "pattern": "^DAGPathOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGArrayOutputAlias": {
+        "title": "DAGArrayOutputAlias",
+        "description": "DAG alias array output.\n\nThis output loads the content from a JSON file which must be a JSON Array.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGArrayOutputAlias",
+            "pattern": "^DAGArrayOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          },
+          "items_type": {
+            "description": "Type of items in this array. All the items in an array must be from the same type.",
+            "default": "String",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ItemType"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGJSONObjectOutputAlias": {
+        "title": "DAGJSONObjectOutputAlias",
+        "description": "DAG alias object output.\n\nThis output loads the content from a file as a JSON object.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGJSONObjectOutputAlias",
+            "pattern": "^DAGJSONObjectOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler",
+          "from"
+        ]
+      },
+      "DAGLinkedOutputAlias": {
+        "title": "DAGLinkedOutputAlias",
+        "description": "An Alias for Linked Outputs.\n\nA linked output alias will be translated to an object in the UI and stay linked to\nit.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "platform": {
+            "title": "Platform",
+            "description": "Name of the client platform (e.g. Grasshopper, Revit, etc). The value can be any strings as long as it has been agreed between client-side developer and author of the recipe.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "handler": {
+            "title": "Handler",
+            "description": "List of process actions to process the input or output value.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IOAliasHandler"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGLinkedOutputAlias",
+            "pattern": "^DAGLinkedOutputAlias$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "platform",
+          "handler"
+        ]
+      },
+      "DAGGenericOutput": {
+        "title": "DAGGenericOutput",
+        "description": "DAG generic output.\n\nIn most cases, you should not be using the generic output unless you need a dynamic\noutput that changes its type in different platforms because of returning different\nobjects in handler.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file."
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGGenericOutput",
+            "pattern": "^DAGGenericOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGStringOutput": {
+        "title": "DAGStringOutput",
+        "description": "DAG string output.\n\nThis output loads the content from a file as a string.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGStringOutput",
+            "pattern": "^DAGStringOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGIntegerOutput": {
+        "title": "DAGIntegerOutput",
+        "description": "DAG integer output.\n\nThis output loads the content from a file as an integer.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGIntegerOutput",
+            "pattern": "^DAGIntegerOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGNumberOutput": {
+        "title": "DAGNumberOutput",
+        "description": "DAG number output.\n\nThis output loads the content from a file as a floating number.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGNumberOutput",
+            "pattern": "^DAGNumberOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGBooleanOutput": {
+        "title": "DAGBooleanOutput",
+        "description": "DAG boolean output.\n\nThis output loads the content from a file as a boolean.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGBooleanOutput",
+            "pattern": "^DAGBooleanOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGFolderOutput": {
+        "title": "DAGFolderOutput",
+        "description": "DAG folder output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a folder or a task output. Task output must be folder.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FolderReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFolderOutput",
+            "pattern": "^DAGFolderOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGFileOutput": {
+        "title": "DAGFileOutput",
+        "description": "DAG file output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGFileOutput",
+            "pattern": "^DAGFileOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGPathOutput": {
+        "title": "DAGPathOutput",
+        "description": "DAG path output.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file, folder or a task output. Task output must either be a file or a folder.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              },
+              {
+                "$ref": "#/components/schemas/FolderReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGPathOutput",
+            "pattern": "^DAGPathOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGArrayOutput": {
+        "title": "DAGArrayOutput",
+        "description": "DAG array output.\n\nThis output loads the content from a JSON file which must be a JSON Array.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGArrayOutput",
+            "pattern": "^DAGArrayOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          },
+          "items_type": {
+            "description": "Type of items in this array. All the items in an array must be from the same type.",
+            "default": "String",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ItemType"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "DAGJSONObjectOutput": {
+        "title": "DAGJSONObjectOutput",
+        "description": "DAG object output.\n\nThis output loads the content from a file as a JSON object.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "Reference to a file or a task output. Task output must be file.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/FileReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGJSONObjectOutput",
+            "pattern": "^DAGJSONObjectOutput$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "alias": {
+            "title": "Alias",
+            "description": "A list of additional processes for loading this output on different platforms.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutputAlias"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGLinkedOutputAlias"
+                }
+              ]
+            }
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "InputReference": {
+        "title": "InputReference",
+        "description": "An input parameter reference which is not a file or a folder.\n\nFor a file or a folder use InputFileReference, InputFolderReference or\nInputPathReference instead.",
+        "type": "object",
+        "properties": {
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the DAG input variable",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "InputReference",
+            "pattern": "^InputReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "variable"
+        ]
+      },
+      "ItemReference": {
+        "title": "ItemReference",
+        "description": "An Item Reference.",
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "default": "ItemReference",
+            "pattern": "^ItemReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the looped item variable (use dot notation for nested json values)",
+            "type": "string"
+          }
+        }
+      },
+      "ValueReference": {
+        "title": "ValueReference",
+        "description": "A reference to a fixed value.",
+        "type": "object",
+        "properties": {
+          "value": {
+            "title": "Value",
+            "description": "A fixed value for this reference."
+          },
+          "type": {
+            "title": "Type",
+            "default": "ValueReference",
+            "pattern": "^ValueReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "value"
+        ]
+      },
+      "TaskArgument": {
+        "title": "TaskArgument",
+        "description": "Task argument for receiving inputs that are not files or folders.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Argument name. The name must match one of the input names from Task's template which can be a function or DAG.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "A reference to a DAG input, a DAG output or another task output. You can also use the ValueReference type to hard-code an input value.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InputReference"
+              },
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/ItemReference"
+              },
+              {
+                "$ref": "#/components/schemas/ValueReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskArgument",
+            "pattern": "^TaskArgument$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "InputFileReference": {
+        "title": "InputFileReference",
+        "description": "An input file reference",
+        "type": "object",
+        "properties": {
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the DAG input variable",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "InputFileReference",
+            "pattern": "^InputFileReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "variable"
+        ]
+      },
+      "InputFolderReference": {
+        "title": "InputFolderReference",
+        "description": "An input folder reference",
+        "type": "object",
+        "properties": {
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the DAG input variable",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "InputFolderReference",
+            "pattern": "^InputFolderReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "variable"
+        ]
+      },
+      "InputPathReference": {
+        "title": "InputPathReference",
+        "description": "An input file or folder reference",
+        "type": "object",
+        "properties": {
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the DAG input variable",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "InputPathReference",
+            "pattern": "^InputPathReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "variable"
+        ]
+      },
+      "TaskFileReference": {
+        "title": "TaskFileReference",
+        "description": "A reference to a file that is generated in a task.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the task to pull output data from.",
+            "type": "string"
+          },
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the variable.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskFileReference",
+            "pattern": "^TaskFileReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "variable"
+        ]
+      },
+      "TaskFolderReference": {
+        "title": "TaskFolderReference",
+        "description": "A reference to a folder that is generated in a task.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the task to pull output data from.",
+            "type": "string"
+          },
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the variable.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskFolderReference",
+            "pattern": "^TaskFolderReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "variable"
+        ]
+      },
+      "TaskPathReference": {
+        "title": "TaskPathReference",
+        "description": "A reference to a file or folder that is generated in a task.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "The name of the task to pull output data from.",
+            "type": "string"
+          },
+          "variable": {
+            "title": "Variable",
+            "description": "The name of the variable.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskPathReference",
+            "pattern": "^TaskPathReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "variable"
+        ]
+      },
+      "ValueFileReference": {
+        "title": "ValueFileReference",
+        "description": "A reference to a fixed file.",
+        "type": "object",
+        "properties": {
+          "path": {
+            "title": "Path",
+            "description": "A fixed value for this reference.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "ValueFileReference",
+            "pattern": "^ValueFileReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "ValueFolderReference": {
+        "title": "ValueFolderReference",
+        "description": "A reference to a fixed folder.",
+        "type": "object",
+        "properties": {
+          "path": {
+            "title": "Path",
+            "description": "A fixed value for this reference.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "ValueFolderReference",
+            "pattern": "^ValueFolderReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "TaskPathArgument": {
+        "title": "TaskPathArgument",
+        "description": "BaseModel with functionality to return the object as a yaml string.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Argument name. The name must match one of the input names from Task's template which can be a function or DAG.",
+            "type": "string"
+          },
+          "from": {
+            "title": "From",
+            "description": "A reference to a DAG input, a DAG output or another task output. You can also use the ValueReference type to hard-code an input value.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InputFileReference"
+              },
+              {
+                "$ref": "#/components/schemas/InputFolderReference"
+              },
+              {
+                "$ref": "#/components/schemas/InputPathReference"
+              },
+              {
+                "$ref": "#/components/schemas/TaskFileReference"
+              },
+              {
+                "$ref": "#/components/schemas/TaskFolderReference"
+              },
+              {
+                "$ref": "#/components/schemas/TaskPathReference"
+              },
+              {
+                "$ref": "#/components/schemas/ValueFileReference"
+              },
+              {
+                "$ref": "#/components/schemas/ValueFolderReference"
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskPathArgument",
+            "pattern": "^TaskPathArgument$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "sub_path": {
+            "title": "Sub Path",
+            "description": "A sub_path inside the path that is provided in the ``from`` field. Use sub_path to only access part of the Path that is needed instead of copying all the files and folders inside the path.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "from"
+        ]
+      },
+      "ValueListReference": {
+        "title": "ValueListReference",
+        "description": "A reference to a fixed value.",
+        "type": "object",
+        "properties": {
+          "value": {
+            "title": "Value",
+            "description": "A fixed value for this reference.",
+            "type": "array",
+            "items": {}
+          },
+          "type": {
+            "title": "Type",
+            "default": "ValueListReference",
+            "pattern": "^ValueListReference$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          }
+        },
+        "required": [
+          "value"
+        ]
+      },
+      "DAGTaskLoop": {
+        "title": "DAGTaskLoop",
+        "description": "Loop configuration for the task.\n\nThis will run the template provided multiple times and in parallel relative to an\ninput or task parameter which should be a list.",
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "default": "DAGTaskLoop",
+            "pattern": "^DAGTaskLoop$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "from": {
+            "title": "From",
+            "description": "The task or DAG parameter to loop over (must be iterable).",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InputReference"
+              },
+              {
+                "$ref": "#/components/schemas/TaskReference"
+              },
+              {
+                "$ref": "#/components/schemas/ValueListReference"
+              }
+            ]
+          }
+        }
+      },
+      "TaskReturn": {
+        "title": "TaskReturn",
+        "description": "A Task return output that exposes the values from a function or a DAG.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskReturn",
+            "pattern": "^TaskReturn$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "TaskPathReturn": {
+        "title": "TaskPathReturn",
+        "description": "A Task output that returns a file or a folder output from a function or a DAG.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Output name.",
+            "type": "string"
+          },
+          "path": {
+            "title": "Path",
+            "description": "Path to the output artifact relative to where the function command is executed.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "TaskPathReturn",
+            "pattern": "^TaskPathReturn$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description for output.",
+            "type": "string"
+          },
+          "required": {
+            "title": "Required",
+            "description": "A boolean to indicate if an artifact output is required. A False value makes the artifact optional.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "path"
+        ]
+      },
+      "DAGTask": {
+        "title": "DAGTask",
+        "description": "A single task in a DAG flow.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "Name for this task. It must be unique in a DAG.",
+            "type": "string"
+          },
+          "template": {
+            "title": "Template",
+            "description": "Template name. A template is a Function or a DAG. This template must be available in the dependencies.",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAGTask",
+            "pattern": "^DAGTask$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "needs": {
+            "title": "Needs",
+            "description": "List of DAG tasks that this task depends on and needs to be executed before this task.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "arguments": {
+            "title": "Arguments",
+            "description": "The input arguments for this task.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/TaskArgument"
+                },
+                {
+                  "$ref": "#/components/schemas/TaskPathArgument"
+                }
+              ]
+            }
+          },
+          "loop": {
+            "title": "Loop",
+            "description": "Loop configuration for this task.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/DAGTaskLoop"
+              }
+            ]
+          },
+          "sub_folder": {
+            "title": "Sub Folder",
+            "description": "A path relative to the current folder context where artifacts should be saved. This is useful when performing a loop or invoking another workflow and wanting to save results in a specific sub_folder.",
+            "type": "string"
+          },
+          "returns": {
+            "title": "Returns",
+            "description": "List of task returns.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/TaskReturn"
+                },
+                {
+                  "$ref": "#/components/schemas/TaskPathReturn"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "template"
+        ]
+      },
+      "DAG": {
+        "title": "DAG",
+        "description": "A Directed Acyclic Graph containing a list of tasks.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "description": "A unique name for this dag.",
+            "type": "string"
+          },
+          "tasks": {
+            "title": "Tasks",
+            "description": "Tasks are a list of DAG steps",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DAGTask"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "DAG",
+            "pattern": "^DAG$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "inputs": {
+            "title": "Inputs",
+            "description": "Inputs for the DAG.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayInput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectInput"
+                }
+              ]
+            }
+          },
+          "outputs": {
+            "title": "Outputs",
+            "description": "Outputs of the DAG that can be used by other DAGs.",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/DAGGenericOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGStringOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGIntegerOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGNumberOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGBooleanOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFolderOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGFileOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGPathOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGArrayOutput"
+                },
+                {
+                  "$ref": "#/components/schemas/DAGJSONObjectOutput"
+                }
+              ]
+            }
+          },
+          "fail_fast": {
+            "title": "Fail Fast",
+            "description": "Stop scheduling new steps, as soon as it detects that one of the DAG nodes is failed. Default is True.",
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "tasks"
+        ]
+      },
+      "Recipe": {
+        "title": "Recipe",
+        "description": "A Queenbee Recipe",
+        "type": "object",
+        "properties": {
+          "flow": {
+            "title": "Flow",
+            "description": "A list of tasks to create a DAG recipe.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DAG"
+            }
+          },
+          "type": {
+            "title": "Type",
+            "default": "Recipe",
+            "pattern": "^Recipe$",
+            "type": "string",
+            "readOnly": true
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "An optional dictionary to add annotations to inputs. These annotations will be used by the client side libraries.",
+            "type": "object"
+          },
+          "api_version": {
+            "title": "Api Version",
+            "default": "v1beta1",
+            "readOnly": true,
+            "pattern": "^v1beta1$",
+            "type": "string"
+          },
+          "metadata": {
+            "title": "Metadata",
+            "description": "Recipe metadata information.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MetaData"
+              }
+            ]
+          },
+          "dependencies": {
+            "title": "Dependencies",
+            "description": "A list of plugins and other recipes this recipe depends on.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Dependency"
+            }
+          }
+        },
+        "required": [
+          "flow"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+queenbee.cli.recipe.install module
+==================================
+
+.. automodule:: queenbee.cli.recipe.install
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+queenbee.base.request module
+============================
+
+.. automodule:: queenbee.base.request
+   :members:
+   :undoc-members:
+   :show-inheritance:

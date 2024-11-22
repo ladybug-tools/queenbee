@@ -1,0 +1,7 @@
+queenbee.config.repositories module
+===================================
+
+.. automodule:: queenbee.config.repositories
+   :members:
+   :undoc-members:
+   :show-inheritance:

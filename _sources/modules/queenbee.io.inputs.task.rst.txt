@@ -1,0 +1,7 @@
+queenbee.io.inputs.task module
+==============================
+
+.. automodule:: queenbee.io.inputs.task
+   :members:
+   :undoc-members:
+   :show-inheritance:

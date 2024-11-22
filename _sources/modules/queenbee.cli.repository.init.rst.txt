@@ -1,0 +1,7 @@
+queenbee.cli.repository.init module
+===================================
+
+.. automodule:: queenbee.cli.repository.init
+   :members:
+   :undoc-members:
+   :show-inheritance:

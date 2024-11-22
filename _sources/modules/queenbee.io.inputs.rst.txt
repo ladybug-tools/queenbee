@@ -1,0 +1,23 @@
+queenbee.io.inputs package
+==========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.io.inputs.alias
+   queenbee.io.inputs.dag
+   queenbee.io.inputs.function
+   queenbee.io.inputs.job
+   queenbee.io.inputs.step
+   queenbee.io.inputs.task
+
+Module contents
+---------------
+
+.. automodule:: queenbee.io.inputs
+   :members:
+   :undoc-members:
+   :show-inheritance:

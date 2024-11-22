@@ -1,0 +1,29 @@
+queenbee.io package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.io.inputs
+   queenbee.io.outputs
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   queenbee.io.artifact_source
+   queenbee.io.common
+   queenbee.io.reference
+
+Module contents
+---------------
+
+.. automodule:: queenbee.io
+   :members:
+   :undoc-members:
+   :show-inheritance:

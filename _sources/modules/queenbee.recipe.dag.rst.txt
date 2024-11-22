@@ -1,0 +1,7 @@
+queenbee.recipe.dag module
+==========================
+
+.. automodule:: queenbee.recipe.dag
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+queenbee.cli.repository.manage module
+=====================================
+
+.. automodule:: queenbee.cli.repository.manage
+   :members:
+   :undoc-members:
+   :show-inheritance:

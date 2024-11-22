@@ -1,0 +1,7 @@
+queenbee.io.reference module
+============================
+
+.. automodule:: queenbee.io.reference
+   :members:
+   :undoc-members:
+   :show-inheritance:

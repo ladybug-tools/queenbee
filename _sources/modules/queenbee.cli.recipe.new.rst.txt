@@ -1,0 +1,7 @@
+queenbee.cli.recipe.new module
+==============================
+
+.. automodule:: queenbee.cli.recipe.new
+   :members:
+   :undoc-members:
+   :show-inheritance:
